@@ -1,0 +1,11 @@
+{
+    "actorOutputSchemaVersion": 1,
+    "title": "Output schema of PubMed Research Alert",
+    "properties": {
+        "results": {
+            "type": "string",
+            "title": "Papers",
+            "template": "{{links.apiDefaultDatasetUrl}}/items"
+        }
+    }
+}

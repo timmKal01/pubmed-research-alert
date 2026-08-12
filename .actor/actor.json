@@ -1,0 +1,13 @@
+{
+    "actorSpecification": 1,
+    "name": "pubmed-research-alert",
+    "title": "PubMed Research Alert — New Papers by Keyword & Author",
+    "description": "Search newly indexed biomedical and life-science papers by keyword, author, or journal. Official NCBI/PubMed data, for pharma/biotech competitive intelligence and literature monitoring.",
+    "version": "0.1",
+    "meta": {
+        "templateId": "custom-no-proxy"
+    },
+    "input": "./input_schema.json",
+    "output": "./output_schema.json",
+    "dockerfile": "../Dockerfile"
+}

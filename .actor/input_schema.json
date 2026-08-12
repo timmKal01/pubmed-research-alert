@@ -1,0 +1,43 @@
+{
+    "title": "PubMed Research Alert Input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "keyword": {
+            "title": "Keyword",
+            "type": "string",
+            "editor": "textfield",
+            "description": "Free-text search across titles, abstracts, and MeSH terms (e.g. \"CRISPR\", \"immunotherapy\"). Leave blank to skip."
+        },
+        "author": {
+            "title": "Author",
+            "type": "string",
+            "editor": "textfield",
+            "description": "Author name, PubMed format (e.g. \"Smith J\"). Leave blank for all authors."
+        },
+        "journal": {
+            "title": "Journal",
+            "type": "string",
+            "editor": "textfield",
+            "description": "Journal name (e.g. \"Nature\", \"The Lancet\"). Leave blank for all journals."
+        },
+        "daysBack": {
+            "title": "Days back",
+            "type": "integer",
+            "editor": "number",
+            "description": "How many days back from today to search, by publication date.",
+            "default": 14,
+            "minimum": 1,
+            "maximum": 365
+        },
+        "maxResults": {
+            "title": "Max results",
+            "type": "integer",
+            "editor": "number",
+            "description": "Maximum number of papers to return, most recent first.",
+            "default": 25,
+            "minimum": 1,
+            "maximum": 100
+        }
+    }
+}
