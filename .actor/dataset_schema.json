@@ -1,0 +1,63 @@
+{
+    "actorSpecification": 1,
+    "fields": {},
+    "views": {
+        "overview": {
+            "title": "Overview",
+            "transformation": {
+                "fields": [
+                    "pmid",
+                    "title",
+                    "authors",
+                    "journal",
+                    "pubDate",
+                    "epubDate",
+                    "doi",
+                    "doiUrl",
+                    "pubmedUrl"
+                ]
+            },
+            "display": {
+                "component": "table",
+                "properties": {
+                    "pmid": {
+                        "label": "PMID",
+                        "format": "text"
+                    },
+                    "title": {
+                        "label": "Title",
+                        "format": "text"
+                    },
+                    "authors": {
+                        "label": "Authors",
+                        "format": "array"
+                    },
+                    "journal": {
+                        "label": "Journal",
+                        "format": "text"
+                    },
+                    "pubDate": {
+                        "label": "Pub date",
+                        "format": "text"
+                    },
+                    "epubDate": {
+                        "label": "Epub date",
+                        "format": "text"
+                    },
+                    "doi": {
+                        "label": "DOI",
+                        "format": "text"
+                    },
+                    "doiUrl": {
+                        "label": "DOI URL",
+                        "format": "link"
+                    },
+                    "pubmedUrl": {
+                        "label": "Pubmed URL",
+                        "format": "link"
+                    }
+                }
+            }
+        }
+    }
+}
